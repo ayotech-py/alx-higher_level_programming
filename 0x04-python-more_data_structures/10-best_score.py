@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
+    if a_dictionary == None:
+        return None
     dic_list = []
     for key in a_dictionary:
         dic_list.append(a_dictionary[key])
@@ -7,6 +9,6 @@ def best_score(a_dictionary):
     for num in dic_list:
         if num > largest:
             largest = num
-        else:
-            continue
-    return largest
+    for large_key in a_dictionary:
+        if a_dictionary[large_key] == largest:
+            return large_key
