@@ -9,6 +9,6 @@ def safe_print_list(my_list=[], x=0):
             a += 1
             print('{}'.format(i), end='')
         print()
-    except TypeError:
-        pass
+    except IndexError:
+        print()
     return a
