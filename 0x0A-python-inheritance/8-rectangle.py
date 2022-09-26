@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Exercise 8"""
-BaseGeometry = __import__("7-base_geometrry").BaseGeometry
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class Rectangle(BaseGeometry):
     """Rectangle Class"""
