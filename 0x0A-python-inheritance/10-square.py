@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""New Class"""
 BaseGeometry = __import__("9-rectangle").Rectangle
-"""New Square Class"""
 
 
 class Square(BaseGeometry):
