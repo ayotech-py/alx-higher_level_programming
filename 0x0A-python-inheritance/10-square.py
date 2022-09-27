@@ -15,4 +15,5 @@ class Square(BaseGeometry):
 
     def __str__(self):
         """This method return a string"""
-        return "[{}] {}/{}".format(self.__class__.__name__, self.__size, self.__size)
+        return "[{}] {}/{}"\
+            .format(self.__class__.__name__, self.__size, self.__size)
