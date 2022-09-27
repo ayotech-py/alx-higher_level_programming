@@ -4,9 +4,10 @@ BaseGeometry = __import__("9-rectangle").Rectangle
 
 
 class Square(BaseGeometry):
-    """This method initializes the class"""
+    """Square function"""
 
     def __init__(self, size):
+        """This method initializes the class"""
         self.integer_validator("size", size)
         self.__size = size
 
