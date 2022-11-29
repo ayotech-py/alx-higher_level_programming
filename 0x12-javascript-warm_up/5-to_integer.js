@@ -1,10 +1,6 @@
 #!/usr/bin/node
 
 const { argv } = require('process');
-const num = parseInt(argv[2]) / 1;
+const num = parseInt(argv[2]);
 
-if (num) {
-	console.log('My number is: ' + num);
-} else {
-	console.log('Not a number');
-}
+console.log(Number.isInteger(num) ? `My number: ${num}` : 'Not a number');
