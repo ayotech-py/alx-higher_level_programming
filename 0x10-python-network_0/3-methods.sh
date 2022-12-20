@@ -1,3 +1,3 @@
 #!/bin/bash
 #This script list out alll  the suported methods of http
-curl -i -L -X OPTIONS $1
+curl -sI -X OPTIONS $1 | grep "Allow:" | cut -d " " -f 2-
