@@ -6,4 +6,5 @@ import sys
 
 if __name__ == "__main__":
     body = requests.get(sys.argv[1])
-    print(body.headers['X-Request-Id'])
+    if body.headers['X-Request-Id']:
+        print(body.headers['X-Request-Id'])
