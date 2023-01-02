@@ -5,6 +5,8 @@ import sys
 
 
 if __name__ == "__main__":
-    body = requests.get(sys.argv[1])
-    if body.headers['X-Request-Id']:
+    try:
+        body = requests.get(sys.argv[1])
         print(body.headers['X-Request-Id'])
+    except requests.exceptions.RequestException:
+        pass
