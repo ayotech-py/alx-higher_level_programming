@@ -10,3 +10,5 @@ if __name__ == "__main__":
         print(body.headers['X-Request-Id'])
     except requests.exceptions.RequestException:
         pass
+    except KeyError:
+        pass
