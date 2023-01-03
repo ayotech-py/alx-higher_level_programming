@@ -12,8 +12,8 @@ if __name__ == "__main__":
         response = requests.post(url, data={'q': ""})
     try:
         if response.json() and len(response.json()) != 0:
-            print("[{}] {}".format(response.json()['id'], \
-                    response.json()['name']))
+            print("[{}] {}".format(response.json()['id'],
+                  response.json()['name']))
         elif len(response.json()) == 0:
             print("No result")
     except ValueError:
