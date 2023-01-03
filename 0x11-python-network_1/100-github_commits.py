@@ -11,5 +11,8 @@ if __name__ == "__main__":
     response = requests.get(url)
     data = response.json()
     for i in range(10):
-        print("{}: {}".format(data[i]['sha'],
-              data[i]['commit']['author']['name']))
+        try:
+            print("{}: {}".format(data[i]['sha'],
+                  data[i]['commit']['author']['name']))
+        except IndexError:
+            break
